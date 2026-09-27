@@ -1,0 +1,10 @@
+apiVersion: tplater.dev/v1alpha1
+kind: Template
+metadata:
+  name: template-base
+  version: 0.0.0-local
+  description: Neutral base template repository bootstrap.
+engine:
+  type: gotemplate
+  root: files
+settings: []
