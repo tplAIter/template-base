@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/tplAIter/.github/main/assets/banner.png" alt="tplAIter — Templates for the way you build." width="100%">
+  <img src="https://raw.githubusercontent.com/tplAIter/.github/main/assets/banner.png?v=20260928" alt="tplAIter — Build with blocks. Spend fewer tokens." width="100%">
 </p>
 
 <h1 align="center">template-base</h1>
@@ -11,6 +11,11 @@
 <p align="center"><a href="https://github.com/tplAIter/tplaiter">core CLI</a> · <a href="https://github.com/tplAIter/template-go">Go template</a> · <a href="https://github.com/tplAIter/template-rust">Rust template</a> · <a href="https://github.com/tplAIter/tplaiter/blob/main/docs/template-validation.md">validation workflow</a></p>
 
 `template-base` contains the neutral bootstrap files used by the base template contract. Rendering is handled by the shared Go `text/template` engine from the core repository.
+
+It is the small, reviewable starting point for an intended MCP-assisted flow:
+an agent chooses parameters and blocks, the renderer materializes them, and
+the shared checker verifies the manifest and fixture output. It does not mean
+that a live project-creation workflow is available in this preview.
 
 ## Included
 
