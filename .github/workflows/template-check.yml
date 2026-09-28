@@ -13,4 +13,4 @@ jobs:
       - uses: actions/setup-go@40f1582b2485089dde7abd97c1529aa768e1baff
         with:
           go-version: '1.27.1'
-      - uses: tplAIter/tplaiter/.github/actions/template-check@df3f08ee70dace4c6cbafac5e1e7735b0081c42f
+      - uses: tplAIter/tplaiter/.github/actions/template-check@12cf8f810faa25f8c573dcc22fbebb45b1c4db8c
