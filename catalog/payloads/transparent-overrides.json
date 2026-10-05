@@ -1,0 +1,14 @@
+{
+  "apiVersion": "tplaiter.dev/export-payload/v1",
+  "exportID": "transparent-overrides",
+  "files": [
+    {
+      "sourcePath": "docs/rule-overrides.md",
+      "targetPath": "docs/rule-overrides.md",
+      "mode": "100644",
+      "contentSHA256": "sha256:24659f8ad7397a9a00a3fcdf2de10054cb4458c07e3106c0ae9c4c6b42877643"
+    }
+  ],
+  "slots": [],
+  "blocks": []
+}

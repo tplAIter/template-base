@@ -1,0 +1,14 @@
+{
+  "apiVersion": "tplaiter.dev/export-payload/v1",
+  "exportID": "task-context",
+  "files": [
+    {
+      "sourcePath": "capabilities/task-context.md",
+      "targetPath": "capabilities/task-context.md",
+      "mode": "100644",
+      "contentSHA256": "sha256:3363cc44a56a68198f011c8aec9c117ed7f6b720534f520912d9a8913576add1"
+    }
+  ],
+  "slots": [],
+  "blocks": []
+}

@@ -1,0 +1,54 @@
+[
+  {
+    "id": "rule-overrides",
+    "domain": "block",
+    "name": "rule-overrides",
+    "version": "0.1.0",
+    "contentDigest": "sha256:c0c07e562bfeda9e9f4736a06338e8b9b8fa9ecf9b4011ebab76652b7ed4b2be",
+    "parameters": [],
+    "toolDigest": "sha256:e4a1cbbb7f20f2aa0d5220411f111ededdd29a786b845afcb38e65835ea87437",
+    "requires": []
+  },
+  {
+    "id": "task-context",
+    "domain": "block",
+    "name": "task-context",
+    "version": "0.1.0",
+    "contentDigest": "sha256:8d007f9e5166665441a9a2c4bad9c4c1356d543fd9a9d0ba6b6de8ce091457da",
+    "parameters": [],
+    "toolDigest": "sha256:e4a1cbbb7f20f2aa0d5220411f111ededdd29a786b845afcb38e65835ea87437",
+    "requires": []
+  },
+  {
+    "id": "context-selection",
+    "domain": "skill",
+    "name": "context-selection",
+    "version": "0.1.0",
+    "contentDigest": "sha256:baf67cf5dfbb24e7aab67ea061883a77576246b1b1e814243f9d95291e168a62",
+    "parameters": [],
+    "toolDigest": "sha256:e4a1cbbb7f20f2aa0d5220411f111ededdd29a786b845afcb38e65835ea87437",
+    "requires": [
+      {
+        "selector": "base.block.task-context",
+        "contractDigest": "sha256:6b6e9e42ed81c1c6f520dbbbbd9c4ab2ba0100a7a3089467cff52b5f800cf075",
+        "compatibleRange": ">=0.1.0 <0.2.0"
+      }
+    ]
+  },
+  {
+    "id": "transparent-overrides",
+    "domain": "approach",
+    "name": "transparent-overrides",
+    "version": "0.1.0",
+    "contentDigest": "sha256:af69e2bed43dd6ba9288ec75a428cbc857b4832a24b2a767abd941921138d943",
+    "parameters": [],
+    "toolDigest": "sha256:e4a1cbbb7f20f2aa0d5220411f111ededdd29a786b845afcb38e65835ea87437",
+    "requires": [
+      {
+        "selector": "base.block.rule-overrides",
+        "contractDigest": "sha256:6b6e9e42ed81c1c6f520dbbbbd9c4ab2ba0100a7a3089467cff52b5f800cf075",
+        "compatibleRange": ">=0.1.0 <0.2.0"
+      }
+    ]
+  }
+]

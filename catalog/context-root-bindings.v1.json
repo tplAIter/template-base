@@ -1,0 +1,12 @@
+{
+  "apiVersion": "tplaiter.dev/context-root-bindings/v1",
+  "kind": "ContextRootBindings",
+  "source": {
+    "alias": "base",
+    "providerID": "template-base",
+    "parameters": [],
+    "entriesPath": "catalog/entries.json",
+    "payloadDirectory": "catalog/payloads",
+    "toolPath": "catalog/tool-contract.md"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "apiVersion": "tplaiter.dev/export-payload/v1",
+  "exportID": "context-selection",
+  "files": [
+    {
+      "sourcePath": "skills/context-selection/SKILL.md",
+      "targetPath": "skills/context-selection/SKILL.md",
+      "mode": "100644",
+      "contentSHA256": "sha256:653ebe032b7877d8fbc806cb34066980bcb01249421d2714b30a619cc56442fd"
+    },
+    {
+      "sourcePath": "docs/task-context.md",
+      "targetPath": "docs/task-context.md",
+      "mode": "100644",
+      "contentSHA256": "sha256:8459a685d19279861e471b83391d134003c78836c6f471ba11b6bed6838559b3"
+    },
+    {
+      "sourcePath": "catalog/README.md",
+      "targetPath": "catalog/README.md",
+      "mode": "100644",
+      "contentSHA256": "sha256:3c2e80c63caf1546b066402d5cb612f2e32b60a1718917e4bdce148ce7ca294f"
+    }
+  ],
+  "slots": [],
+  "blocks": []
+}

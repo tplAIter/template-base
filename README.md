@@ -1,34 +1,29 @@
-<p align="center">
-  <img src="https://raw.githubusercontent.com/tplAIter/.github/main/assets/banner.png?v=20260928" alt="tplAIter — Build with blocks. Spend fewer tokens." width="100%">
-</p>
+# Template base
 
-<h1 align="center">template-base</h1>
+A neutral Go-template root with versioned, reusable task context. The existing
+`files` engine renders the project README. Context resources are selected
+separately through the compiled authenticated ROOT consumer; they are not copied
+into a project or executed automatically by rendering.
 
-<p align="center">Neutral bootstrap assets for a tplAIter template repository.</p>
+| Selector | Purpose | Required context |
+| --- | --- | --- |
+| `base.block.task-context` | Task scope and complete context consumption | None |
+| `base.block.rule-overrides` | Explicit rule changes and retained provenance | None |
+| `base.skill.context-selection` | Select complete task context | `base.block.task-context` |
+| `base.approach.transparent-overrides` | Explain typed rule composition | `base.block.rule-overrides` |
 
-<p align="center"><strong>Status: public development preview · local manifest</strong></p>
+All four exports are version `0.1.0`. See [task selection](docs/task-context.md),
+[rule composition](docs/rule-overrides.md), and [catalog contracts](catalog/README.md).
 
-<p align="center"><a href="https://github.com/tplAIter/tplaiter">core CLI</a> · <a href="https://github.com/tplAIter/template-go">Go template</a> · <a href="https://github.com/tplAIter/template-rust">Rust template</a> · <a href="https://github.com/tplAIter/tplaiter/blob/main/docs/template-validation.md">validation workflow</a></p>
+Use a compiled core build with authenticated ROOT selection support. A configured
+operator must capture an immutable source commit, enroll its public evidence,
+install the pinned registration, provision trust, and create the project through
+normal `new`. See the core [source enrollment documentation](https://github.com/tplAIter/tplaiter/blob/main/docs/source-enrollment.md).
+Local-operator attestation describes approved captured bytes; it does not establish
+upstream authorship or organization authority.
 
-`template-base` contains the neutral bootstrap files used by the base template contract. Rendering is handled by the shared Go `text/template` engine from the core repository.
-
-It is the small, reviewable starting point for an intended MCP-assisted flow:
-an agent chooses parameters and blocks, the renderer materializes them, and
-the shared checker verifies the manifest and fixture output. It does not mean
-that a live project-creation workflow is available in this preview.
-
-## Included
-
-- `template.manifest.yaml` with the `template-base` identity and `files` render root.
-- A native template contract with no dependencies.
-- The retained base file skeleton under `files/`.
-
-## Verification
-
-The repository workflow runs on pushes, pull requests, and manual dispatch. It uses the pinned `tplAIter/tplaiter` template-check action to validate the manifest and render its fixture combinations. See the [core validation contract](https://github.com/tplAIter/tplaiter/blob/main/docs/template-validation.md) for the checker boundaries.
-
-For local work, run the same core checker from a checked-out core repository against this template, then inspect the rendered fixture output. The checker does not run template hooks or manifest commands.
-
-## Status
-
-This preview has no published version, release, dependency graph, or production-readiness claim. The manifest version is `0.0.0-local`; further template composition and validation are still in progress.
+This source supplies data only: Markdown, closed JSON declarations and immutable
+payload digests. Selection returns complete readonly file images with source pins
+and prerequisite closure. No tool, formatter, hook or provider program runs.
+Dependency enrollment and project writes are separate contracts. This template's
+native v1 contract keeps `dependencies: []`.

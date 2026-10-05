@@ -1,1 +1,1 @@
-{"apiVersion":"tplaiter.dev/native-template-contract/v1","kind":"NativeTemplate","manifestPath":"template.manifest.yaml","manifestSHA256":"sha256:dfc08fb070ebdcbe3a9a1c42fc454fe69b1d169b809ba3b35e2c4f1681c6192e","dependencies":[]}
+{"apiVersion":"tplaiter.dev/native-template-contract/v1","kind":"NativeTemplate","manifestPath":"template.manifest.yaml","manifestSHA256":"sha256:b63df3a1dc27492c9df43ec480a033da33ebb7a9403f36fca96da3c80c37a2cc","dependencies":[]}
