@@ -3,7 +3,13 @@ kind: Template
 metadata:
   name: template-base
   version: 0.1.0
-  description: Neutral base template with reusable context documentation, skills, and capability blocks.
+  description: Reusable framework-neutral task context, documentation, declared skills and capability blocks.
+  labels:
+    tags: ["context", "documentation", "skills", "контекст", "документация"]
+    candidate-kind: ["context"]
+    readiness: ["unknown"]
+    keywords: ["context", "documentation", "skill", "review", "контекст", "документация", "навык", "проверка"]
+    use-cases: ["Select task context", "Review declared project guidance", "Подобрать контекст задачи", "Проверить инструкции проекта"]
   docs: docs/README.md
 engine:
   type: gotemplate
