@@ -1,3 +1,11 @@
 # {{ .Project.Name }}
 
 Generated from the local neutral base template checkpoint.
+
+## Agent discovery bootstrap
+
+The discovery source is published at commit `29e9819df3c3e4ce170c025b74d895375090e2ea`; check the installed CLI/MCP capability and version before using it because an installed binary or server may predate that source. When an MCP server is available, use standard `tools/list` and call `template_discover` only when that exact tool and schema are advertised. Its required `task` is a UTF-8 string of 1–4096 bytes; optional fields are `sourceInput`, `projectContext`, `dir`, `language`, `framework`, and `labels` (`group=value` strings). Bounds are `maxCandidates` 1–256 (default 64), `limit` 1–20 (default 5), and MCP `maxBytes` 2048–32768 (default 16384). Treat the response as bounded descriptive data: `facts.status` is `not-requested`, `empty`, `observed`, or `unavailable`; errors and diagnostics are separate observations. Invoke only advertised read-only `nextToolCalls` (`template_show` or `graph_exports`) to retrieve their exact context, preserving each call's arguments, `expectedDigest`, and source-pin metadata unchanged; typed refusal/error/unavailable conditions are retained and reported.
+
+Workflow: discover capability, select a returned suggestion, read its exact bounded calls, then use that context for the task; never invent, replace, flatten, or manually reconstruct returned calls.
+
+If that MCP capability is unavailable or reports an error, record the MCP `isError` or protocol error. If an installed binary built from the published discovery source is available and its CLI version/capability check confirms discovery, the verified read-only fallback is `tplaiter template discover --task "..." --dir ./path --json` (omit `--dir` when no project path exists); otherwise stop and report the unsupported capability. An existing or empty directory may be observed; keep output within the requested budget. Discovery does not enroll sources, apply changes, run hooks, or grant installation authority.
